@@ -201,7 +201,7 @@ function! s:parse_tree(ctx, top)
       let encoding = matches[1]
       if len(encoding) && len(a:ctx['encoding']) == 0
         let a:ctx['encoding'] = encoding
-        let a:ctx['xml'] = iconv(a:ctx['xml'], encoding, &encoding)
+        " let a:ctx['xml'] = iconv(a:ctx['xml'], encoding, &encoding)
       endif
     endif
   endif
